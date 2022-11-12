@@ -56,10 +56,10 @@ const Player = ({songs,setSongs,isPlaying,setIsPlaying,currentSong,setCurrentSon
         {/* {JSON.stringify(currentSong,null,2)} */}
       <div className='player__title'>{currentSong.title}</div>
       
-      <div className='player__duration'>
-        <p>{!currentSong.progress ? "_._" : (Math.round(currentSong.progress * 100) / 100).toFixed(1)}</p>
+      {/* <div className='player__duration'>
+        <p>{!currentSong.progress ? "_._" : (Math.round(currentSong.progress  * 100) / 100).toFixed(1)}</p>
         <p>{!currentSong.length ? "_._": (Math.round(currentSong.length * 100) / 100).toFixed(1)}</p>
-        </div>
+        </div> */}
 
       <div className='player__controls'>
         <div className="player__track" onClick={seekAudio} ref={seekRef}>
