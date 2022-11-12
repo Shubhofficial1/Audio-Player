@@ -28,13 +28,13 @@ function App() {
   //  Below function is used to add an autoplay functionality to the music player(endless autoplay)
   const onEnded=()=>{
     const index = songs.findIndex(x=>x.title === currentSong.title);
-    if (index === 0)
+    if (index === songs.length -1)
     {
-      setCurrentSong(songs[songs.length - 1])
+      setCurrentSong(songs[0])
     }
     else
     {
-      setCurrentSong(songs[index - 1])
+      setCurrentSong(songs[index + 1])
     }
     audioElem.current.currentTime = 0;
   }
