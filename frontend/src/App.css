@@ -1,0 +1,71 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  background-color: black;
+
+}
+
+.player__container{
+  width: 450px;
+  height: 150px;
+  background-color: #0d1117;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px 10px 0px;
+}
+
+.player__controls{
+  width: 100%;
+  padding: 10px;
+}
+
+.player__title{
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.player__track{
+  width: 100%;
+  background-color: rgb(254, 254, 254);
+  cursor: pointer;
+
+}
+
+.player__progress-track{
+  width: 0%;
+  background-color: rgb(85, 255, 85);
+  height: 7px;
+  border-radius: 3px;
+}
+
+.player__duration{
+  width: 90%;
+  margin: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.player__buttons{
+  display: flex;
+  justify-content: center;
+  margin: 20px 10px ;
+}
+
+.button{
+  cursor: pointer;
+  margin-left: 50px;
+}
+
